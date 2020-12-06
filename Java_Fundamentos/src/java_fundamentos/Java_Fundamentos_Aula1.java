@@ -20,7 +20,21 @@ public class Java_Fundamentos_Aula1 {
         
         //variaveis();
         
-        operadoresMatematicos();
+        //operadoresMatematicos();
+        
+        operadoresComparacao();
+    }
+    public static void operadoresComparacao() {
+        
+        int n1 = 10;
+        int n2 = 2;
+        
+        System.out.println("Iguais: " + (n1 == n2));
+        System.out.println("Diferentes: " + (n1 != n2));
+        System.out.println("Menor: " + (n1 < n2));
+        System.out.println("Maior: " + (n1 > n2));
+        System.out.println("Menor igual: " + (n1 <= n2));
+        System.out.println("Maior igual: " + (n1 >= n2));
         
     }
     public static void operadoresMatematicos() {
