@@ -5,6 +5,8 @@
  */
 package java_fundamentos;
 
+import javax.print.DocFlavor;
+
 /**
  *
  * @author gsuporte
@@ -16,7 +18,14 @@ public class Java_Fundamentos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Olá Mundo!");
+        String nome = "Gabriel Botão";
+        byte idade = 10;
+        float peso = 53.5f;
+        
+        
+        System.out.println("Olá " + nome);
+        System.out.println("Idade: " + idade);
+        
     }
     
 }
