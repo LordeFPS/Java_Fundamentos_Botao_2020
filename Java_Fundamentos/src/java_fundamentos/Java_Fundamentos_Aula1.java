@@ -29,29 +29,85 @@ public class Java_Fundamentos_Aula1 {
         
         // lerScanner(); 
         
-        exercicio1();
+        // exercicio1();
+        
+        exercicio2();
+    }
+    
+    public static void exercicio2() {
+        /* Calcule o Índice de massa corporal (IMC) */
+        
+        Scanner leitor = new Scanner(System.in); // -> classe que le os valores digitados no teclado
+        System.out.println("Digite seu nome: ");
+        String nome = leitor.next();
+
+        System.out.println("Digite sua altura: ");
+        float altura = leitor.nextFloat();
+
+        System.out.println("Digite seu peso: ");
+        float peso = leitor.nextFloat();
+        
+        float imc;
+        
+        imc = (peso / (altura * altura));
+        
+        if (imc <= 18.5){
+            
+            System.out.println("IMC: " + String.format("%.2f", imc));
+            System.out.println("Classificação: Magreza.");
+            System.out.println("Obesidade (grau): 0");
+            
+        
+        }else if (imc > 18.5 && imc <= 24.9){
+
+            System.out.println("IMC: " + String.format("%.2f", imc));
+            System.out.println("Classificação: Normal");
+            System.out.println("Obesidade (grau): 0");
+        
+        }else if (imc >= 25.0 && imc <= 29.9){
+
+            System.out.println("IMC: " + String.format("%.2f", imc));
+            System.out.println("Classificação: Sobrepeso");
+            System.out.println("Obesidade (grau): I");
+        
+        }else if (imc >= 30.0 && imc <= 39.9){
+
+            System.out.println("IMC: " + String.format("%.2f", imc));
+            System.out.println("Classificação: Obesidade");
+            System.out.println("Obesidade (grau): II");
+        
+        }else if (imc > 40){
+
+            System.out.println("IMC: " + String.format("%.2f", imc));
+            System.out.println("Classificação: Obesidade grave");
+            System.out.println("Obesidade (grau): III");
+        
+        }
+        
+        
     }
     
     public static void exercicio1() {
        /* Crie um algoritmo que leia o nome e a idade da pessoa e informe
           se la é menor ou maior de idade.*/
        
-       Scanner leitor = new Scanner(System.in); // -> classe que le os valores digitados no teclado
+        Scanner leitor = new Scanner(System.in); // -> classe que le os valores digitados no teclado
         System.out.println("Digite seu nome: ");
         String nome = leitor.next();
-        
+
         System.out.println("Digite sua idade: ");
         int idade = leitor.nextInt();
-        
+
         if (idade >= 18){
-            
+
             System.out.println("Maior de idade -> " + idade);
         }else {
-            
+
             System.out.println("Menor de idade -> " + idade);
         }
        
     }
+   
     public static void lerScanner() {
         
         Scanner leitor = new Scanner(System.in); // -> classe que le os valores digitados no teclado
