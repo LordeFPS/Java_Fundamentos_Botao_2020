@@ -31,7 +31,66 @@ public class Java_Fundamentos_Aula1 {
         
         // exercicio1();
         
-        exercicio2();
+        // exercicio2();
+        
+        exercicio3();
+        
+    }
+    
+    public static void exercicio3() {
+        /* Informar o nome de três notas de um aluno e o percentual de 
+           frequencia. Calcular a média das notas.
+           Calcular a situação do aluno baseano na média que se for menor
+           que 7 será reprovado. Caso o aluno tenha nota acima de 7, mas sua
+           frequencia seja inferior a 75%, também estará reprovado.*/
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.print("Nome do Aluno: ");
+        String aluno = leitor.next();
+        
+        float somaNota = 0;
+        int somaFreq = 0;
+        int cont = 0;
+        
+        for (int i = 0; i < 3; i++){
+            System.out.print("Nota " + (i +1) + ": ");
+            float nota = leitor.nextFloat();
+            System.err.print("Frequencia(%)" + (i +1) + ": ");
+            int frequencia = leitor.nextInt();
+            
+            somaNota = somaNota + nota;
+            somaFreq = somaFreq + frequencia;
+            cont = cont + 1;
+            
+        }        
+        
+        float mediaNota = somaNota / cont;
+        int mediaFreq = somaFreq / cont;
+        
+        if (mediaNota < 7 || mediaFreq < 75){
+            
+            System.out.println("Aluno: " + aluno);
+            System.out.println("Nota: " + mediaNota);
+            System.out.println("Frequencuia: " + mediaFreq);
+            System.out.println("Situação: Reprovado");
+        
+        }else if (mediaNota > 7 || mediaFreq < 75){
+            
+            System.out.println("Aluno: " + aluno);
+            System.out.println("Nota: " + mediaNota);
+            System.out.println("Frequencuia: " + mediaFreq);
+            System.out.println("Situação: Reprovado");
+            
+        }else if (mediaNota >= 7 || mediaFreq >= 75){
+            
+            System.out.println("Aluno: " + aluno);
+            System.out.println("Nota: " + mediaNota);
+            System.out.println("Frequencuia: " + mediaFreq);
+            System.out.println("Situação: Aprovado");
+                
+        }
+        
     }
     
     public static void exercicio2() {
