@@ -27,7 +27,30 @@ public class Java_Fundamentos_Aula1 {
         
         //desvios(); -> If e else
         
-        lerScanner(); 
+        // lerScanner(); 
+        
+        exercicio1();
+    }
+    
+    public static void exercicio1() {
+       /* Crie um algoritmo que leia o nome e a idade da pessoa e informe
+          se la é menor ou maior de idade.*/
+       
+       Scanner leitor = new Scanner(System.in); // -> classe que le os valores digitados no teclado
+        System.out.println("Digite seu nome: ");
+        String nome = leitor.next();
+        
+        System.out.println("Digite sua idade: ");
+        int idade = leitor.nextInt();
+        
+        if (idade >= 18){
+            System.out.println("Aprovado.");
+            System.out.println("Você é maior de idade.");
+        }else {
+            System.out.println("Negado.");
+            System.out.println("Você é menor de idade.");
+        }
+       
     }
     public static void lerScanner() {
         
