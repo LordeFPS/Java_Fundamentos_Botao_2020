@@ -18,7 +18,31 @@ public class Java_Fundamentos_Aula1 {
      */
     public static void main(String[] args) {
         
-        variaveis();
+        //variaveis();
+        
+        operadoresMatematicos();
+        
+    }
+    public static void operadoresMatematicos() {
+        
+        int n1 = 10;
+        int n2 = 2;
+        
+        System.out.println("Soma = " + (n1 + n2));
+        System.out.println("Subtração = " + (n1 - n2));
+        System.out.println("Multiplicação = " + (n1 * n2));
+        System.out.println("Divisão = " + (n1 / n2));
+        System.out.println("Resto = " + (n1 % n2));
+        
+        n1++;
+        System.out.println("Valor 1 = " + n1);
+        n1 = n1 + 1;
+        System.out.println("Valor 1 = " + n1);
+        
+        n2--;
+        System.out.println("Valor 2 = " + n2);
+        n2 = n2 - 1;
+        System.out.println("Valor 2 = " + n2);
         
     }
     
