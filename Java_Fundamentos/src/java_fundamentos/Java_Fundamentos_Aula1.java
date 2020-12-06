@@ -49,44 +49,50 @@ public class Java_Fundamentos_Aula1 {
         System.out.print("Nome do Aluno: ");
         String aluno = leitor.next();
         
+        /*
         float somaNota = 0;
         int somaFreq = 0;
+        */
+        float nota = 0;
+        int frequencia = 0;
         int cont = 0;
         
         for (int i = 0; i < 3; i++){
             System.out.print("Nota " + (i +1) + ": ");
-            float nota = leitor.nextFloat();
+            nota += leitor.nextFloat();
             System.err.print("Frequencia(%)" + (i +1) + ": ");
-            int frequencia = leitor.nextInt();
+            frequencia += leitor.nextInt();
             
+            /*
             somaNota = somaNota + nota;
             somaFreq = somaFreq + frequencia;
+            */
             cont = cont + 1;
             
         }        
         
-        float mediaNota = somaNota / cont;
-        int mediaFreq = somaFreq / cont;
+        float mediaNota = nota / cont;
+        int mediaFreq = frequencia / cont;
         
         if (mediaNota < 7 || mediaFreq < 75){
             
             System.out.println("Aluno: " + aluno);
             System.out.println("Nota: " + mediaNota);
-            System.out.println("Frequencuia: " + mediaFreq);
+            System.out.println("Frequencia: " + mediaFreq);
             System.out.println("Situação: Reprovado");
         
         }else if (mediaNota > 7 || mediaFreq < 75){
             
             System.out.println("Aluno: " + aluno);
             System.out.println("Nota: " + mediaNota);
-            System.out.println("Frequencuia: " + mediaFreq);
+            System.out.println("Frequencia: " + mediaFreq);
             System.out.println("Situação: Reprovado");
             
         }else if (mediaNota >= 7 || mediaFreq >= 75){
             
             System.out.println("Aluno: " + aluno);
             System.out.println("Nota: " + mediaNota);
-            System.out.println("Frequencuia: " + mediaFreq);
+            System.out.println("Frequencia: " + mediaFreq);
             System.out.println("Situação: Aprovado");
                 
         }
