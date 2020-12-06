@@ -44,11 +44,11 @@ public class Java_Fundamentos_Aula1 {
         int idade = leitor.nextInt();
         
         if (idade >= 18){
-            System.out.println("Aprovado.");
-            System.out.println("Você é maior de idade.");
+            
+            System.out.println("Maior de idade -> " + idade);
         }else {
-            System.out.println("Negado.");
-            System.out.println("Você é menor de idade.");
+            
+            System.out.println("Menor de idade -> " + idade);
         }
        
     }
