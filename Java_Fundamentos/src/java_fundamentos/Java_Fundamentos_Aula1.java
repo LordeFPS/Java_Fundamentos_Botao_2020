@@ -22,8 +22,23 @@ public class Java_Fundamentos_Aula1 {
         
         //operadoresMatematicos();
         
-        operadoresComparacao();
+        //operadoresComparacao();
+        
+        desvios();
     }
+    public static void desvios() {
+        
+        int n1 = 10;
+        int n2 = 20;
+        
+        if (n1 > n2){
+            System.out.println(n1 + " é maior que " + n2);
+        }else {
+            System.out.println(n1 + " é menor que " + n2);
+        }
+        
+    }
+    
     public static void operadoresComparacao() {
         
         int n1 = 10;
@@ -37,6 +52,7 @@ public class Java_Fundamentos_Aula1 {
         System.out.println("Maior igual: " + (n1 >= n2));
         
     }
+    
     public static void operadoresMatematicos() {
         
         int n1 = 10;
