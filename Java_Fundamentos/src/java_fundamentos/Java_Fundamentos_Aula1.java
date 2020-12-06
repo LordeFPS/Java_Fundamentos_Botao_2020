@@ -5,7 +5,8 @@
  */
 package java_fundamentos;
 
-import javax.print.DocFlavor;
+import java.util.Scanner;
+
 
 /**
  *
@@ -24,8 +25,27 @@ public class Java_Fundamentos_Aula1 {
         
         //operadoresComparacao();
         
-        desvios();
+        //desvios(); -> If e else
+        
+        lerScanner(); 
     }
+    public static void lerScanner() {
+        
+        Scanner leitor = new Scanner(System.in); // -> classe que le os valores digitados no teclado
+        System.out.println("Informe o nome da pessoa: ");
+        String nome = leitor.next();
+               
+        System.out.println("Digite sua idade: ");
+        int idade = leitor.nextInt();
+        
+        System.out.println("Digite seu peso: ");
+        float peso = leitor.nextFloat();
+        
+        System.out.println("Olá " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Peso: " + peso);
+    }
+    
     public static void desvios() {
         
         int n1 = 10;
