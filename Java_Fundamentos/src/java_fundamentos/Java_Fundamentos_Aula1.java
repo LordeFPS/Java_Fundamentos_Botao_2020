@@ -19,7 +19,7 @@ public class Java_Fundamentos_Aula1 {
      */
     public static void main(String[] args) {
         
-        //variaveis();
+        // variaveis();
         
         //operadoresMatematicos();
         
@@ -192,7 +192,7 @@ public class Java_Fundamentos_Aula1 {
         System.out.println("Sexo: " + sexo);
         */
         
-        String precoProduto = "10.50";
+        String precoProduto = "10.99";
         String quantidadeProduto = "10";
         String desconto = "10.5";
         
@@ -208,9 +208,10 @@ public class Java_Fundamentos_Aula1 {
         double bonus = Double.parseDouble(desconto);
         
         float resultado = preco * qtde;
+        float valorfinal = (resultado * (float) bonus);
         
-        System.out.println("Total: R$" + resultado);
-        System.out.println("Desconto: R$" + (resultado * bonus) / 100);
+        System.out.println("Total: R$" + String.format("%.2f", resultado));
+        System.out.println("Desconto: R$" + String.format("%.2f", valorfinal));
         
     }
     
