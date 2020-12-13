@@ -32,18 +32,74 @@ public class Java_Fundamentos_Aula2 {
         //lacoFor();
         //arrays();
         //exercicio1();
-        matrizes();
+        //matrizes();
+        exercicioMatriz();
     }
     
     public static void exercicioMatriz() {
     /*
-        Criar uma area de jogo
+        Criar uma area de jogo de batalha naval (5x5).
+        Posicionar 2 navios no mapa.
+        Solicitar ao usuario para efetuar um disparo.
+        Verificar se acertou o tiro.
     */
+      
+        // método mais rápido (professor)
+        String[][] tabuleiro = new String[5][5];
         
+        for (int l = 0; l < tabuleiro.length; l++){
+            for (int c = 0; c < tabuleiro[l].length; c++){
+                tabuleiro[l][c] = "-";
+            }
+        }
+        
+        // posicionar os navios       
+        tabuleiro[2][3] = "Navio1";
+        tabuleiro[1][2] = "Navio2";
+        
+        // Realizar os disparos
+        System.out.println("Informe linha que deseja atingir (0-4)");
+        int linha = leitor.nextInt();
+        System.out.println("Informe coluna que deseja atingir (0-4)");
+        int coluna = leitor.nextInt();
+        
+        if (tabuleiro[linha][coluna].equals("Navio1")){
+            System.out.println("Você acertou!!");
+        }else if (tabuleiro[linha][coluna].equals("Navio2")){
+            System.out.println("Você acertou!!");
+        }else {
+            System.out.println("Você errou!!");
+        }
+        /*
+        // método "braçal"
+                
+        int[][] tabuleiro = new int[5][5];
+                
+        int navio1 = tabuleiro[1][3]; 
+        int navio2 = tabuleiro[2][2];
+        
+        System.out.println("Selecione um lugar para disparar");
+        System.out.print("Linha de 0 a 4: ");
+        int linha = leitor.nextInt();
+        System.out.print("Coluna de 0 a 4: ");
+        int coluna = leitor.nextInt();
+
+        if (linha == 1 && coluna == 3) {
+            System.out.println("Afundou um navio");
+        }else if (linha == 2 && coluna == 2) {
+            System.out.println("Afundou um navio");
+        }else if (linha == 1 || linha == 2) {
+            System.out.println("Acertou o disparo");
+        }else if (coluna == 3 || coluna == 2) {
+            System.out.println("Acertou o disparo");
+        }else {
+            System.out.println("Errou o disparo");
+        }
+        */
     }
     
     public static void matrizes() {
-        /*
+    /*
         System.out.println("Digite o tamanho da Matriz");
         System.out.print("Quantidade de linhas: ");
         int linhas = leitor.nextInt();
@@ -51,7 +107,7 @@ public class Java_Fundamentos_Aula2 {
         int colunas = leitor.nextInt();
         
         int[][] matriz = new int[linhas][colunas];
-        */
+    */
         /*
             ↓ Como seria a matriz ↓
                     10 11 12
@@ -79,6 +135,7 @@ public class Java_Fundamentos_Aula2 {
             }       
         }
         System.out.println("");
+        
         int[][] m = {{10,20,30,40},{50,60,70},{80,90}};
         
         for (int l = 0; l < m.length; l++){
