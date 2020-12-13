@@ -30,7 +30,27 @@ public class Java_Fundamentos_Aula2 {
         //maisDeUmAluno();
         //doWhile();
         //lacoFor();
-        arrays();
+        //arrays();
+        exercicio1();
+    }
+    
+    public static void exercicio1() {
+    /*
+        Faça um programa que pede para o usuário informar 10 números inteiros.
+        Em seguida multiplique todos os valores por um fator informado pelo usuário.
+    */
+        int[] valores = new int[10];
+        
+        for (int i = 0; i < valores.length; i++){
+            System.out.print("Valor " + (i+1) + ": " );
+            valores[i] = leitor.nextInt();
+        }
+        System.out.print("Digite um número para multiplicar os valores: ");
+        int multiplica = leitor.nextInt();
+        
+        for (int i = 0; i < valores.length; i++){
+            System.out.println("Resultado " + (i+1) + ": " + (valores[i]*multiplica));
+        }
     }
     
     public static void arrays() {
