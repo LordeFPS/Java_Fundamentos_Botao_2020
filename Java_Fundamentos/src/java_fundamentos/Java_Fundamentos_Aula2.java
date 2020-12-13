@@ -40,14 +40,17 @@ public class Java_Fundamentos_Aula2 {
         Em seguida multiplique todos os valores por um fator informado pelo usuário.
     */
         int[] valores = new int[10];
-        
+        //Preenchimento do array
         for (int i = 0; i < valores.length; i++){
             System.out.print("Valor " + (i+1) + ": " );
             valores[i] = leitor.nextInt();
         }
+        
+        //Pede o fator de multiplicação
         System.out.print("Digite um número para multiplicar os valores: ");
         int multiplica = leitor.nextInt();
         
+        //Percorre o array para mostrar os valores dentro dele.
         for (int i = 0; i < valores.length; i++){
             System.out.println("Resultado " + (i+1) + ": " + (valores[i]*multiplica));
         }
