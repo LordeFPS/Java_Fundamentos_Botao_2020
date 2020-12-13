@@ -34,16 +34,22 @@ public class Java_Fundamentos_Aula2 {
         exercicio1();
     }
     
+    public static void exercicio2() {
+    
+        
+    }
+    
     public static void exercicio1() {
     /*
         Faça um programa que pede para o usuário informar 10 números inteiros.
         Em seguida multiplique todos os valores por um fator informado pelo usuário.
+        Perguntar ao usario se deseja inserir mais numeros.
     */
-        int[] valores = new int[10];
+        int[] array1 = new int[2];
         //Preenchimento do array
-        for (int i = 0; i < valores.length; i++){
+        for (int i = 0; i < array1.length; i++){
             System.out.print("Valor " + (i+1) + ": " );
-            valores[i] = leitor.nextInt();
+            array1[i] = leitor.nextInt();
         }
         
         //Pede o fator de multiplicação
@@ -51,9 +57,31 @@ public class Java_Fundamentos_Aula2 {
         int multiplica = leitor.nextInt();
         
         //Percorre o array para mostrar os valores dentro dele.
-        for (int i = 0; i < valores.length; i++){
-            System.out.println("Resultado " + (i+1) + ": " + (valores[i]*multiplica));
+        for (int i = 0; i < array1.length; i++){
+            System.out.println("Resultado " + (i+1) + ": " + (array1[i]*multiplica));
+        }  
+        
+        System.out.print("Aumentor o array: + ");
+        int adicionar = leitor.nextInt();
+        
+        int[] array2 = new int[array1.length + adicionar];
+        
+        // Transfirir o valores de um array para o outro array
+        for (int i = 0; i < array1.length; i++){
+            array2[i] = array1[i];
         }
+        //Preenchimento do array
+        for (int i = array1.length; i < array2.length; i++){
+            System.out.print("Valor " + (i+1) + ": " );
+            array2[i] = leitor.nextInt();
+        }
+        
+        //Percorre o array para mostrar os valores dentro dele.
+        for (int i = 0; i < array2.length; i++){
+            System.out.println("Resultado " + (i+1) + ": " + (array2[i]*multiplica));
+        } 
+        
+        
     }
     
     public static void arrays() {
