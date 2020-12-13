@@ -31,11 +31,62 @@ public class Java_Fundamentos_Aula2 {
         //doWhile();
         //lacoFor();
         //arrays();
-        exercicio1();
+        //exercicio1();
+        matrizes();
     }
     
-    public static void exercicio2() {
+    public static void exercicioMatriz() {
+    /*
+        Criar uma area de jogo
+    */
+        
+    }
     
+    public static void matrizes() {
+        /*
+        System.out.println("Digite o tamanho da Matriz");
+        System.out.print("Quantidade de linhas: ");
+        int linhas = leitor.nextInt();
+        System.out.print("Quantidade de colunas: ");
+        int colunas = leitor.nextInt();
+        
+        int[][] matriz = new int[linhas][colunas];
+        */
+        /*
+            ↓ Como seria a matriz ↓
+                    10 11 12
+                    13 14 15
+                    16 17 18
+        */
+        int[][] matriz = new int[3][3];
+        
+        matriz[0][0] = 10;
+        matriz[0][1] = 11;
+        matriz[0][2] = 12;
+        
+        matriz[1][0] = 13;
+        matriz[1][1] = 14;
+        matriz[1][2] = 15;
+        
+        matriz[2][0] = 16;
+        matriz[2][1] = 17;
+        matriz[2][2] = 18;
+        
+        for (int l = 0; l < matriz.length; l++) {
+            System.out.println("");
+            for (int c = 0; c < matriz.length; c++) {
+                System.out.print(" " + matriz[l][c]);
+            }       
+        }
+        System.out.println("");
+        int[][] m = {{10,20,30,40},{50,60,70},{80,90}};
+        
+        for (int l = 0; l < m.length; l++){
+            System.out.println("");
+            for (int c = 0; c < m[l].length; c++){
+                System.out.print(" " + m[l][c]);
+            }
+        }
         
     }
     
