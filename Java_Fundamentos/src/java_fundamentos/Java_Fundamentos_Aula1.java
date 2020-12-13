@@ -60,7 +60,7 @@ public class Java_Fundamentos_Aula1 {
         for (int i = 0; i < 3; i++){
             System.out.print("Nota " + (i +1) + ": ");
             nota += leitor.nextFloat();
-            System.err.print("Frequencia(%)" + (i +1) + ": ");
+            System.out.print("Frequencia(%)" + (i +1) + ": ");
             frequencia += leitor.nextInt();
             
             /*
