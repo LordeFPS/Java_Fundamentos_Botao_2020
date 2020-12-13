@@ -47,6 +47,7 @@ public class Java_Fundamentos_Aula2 {
         // método mais rápido (professor)
         String[][] tabuleiro = new String[5][5];
         
+        // preechimento do tabuleiro
         for (int l = 0; l < tabuleiro.length; l++){
             for (int c = 0; c < tabuleiro[l].length; c++){
                 tabuleiro[l][c] = "-";
