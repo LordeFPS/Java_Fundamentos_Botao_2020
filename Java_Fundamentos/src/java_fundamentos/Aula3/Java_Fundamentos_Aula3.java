@@ -17,9 +17,72 @@ public class Java_Fundamentos_Aula3 {
     static Scanner leitor = new Scanner(System.in);
     
     public static void main(String[] args) {
-        
-        exercicio1();
+        //instanciandoProcutos();
+        //instanciandoCarros();
+        //exercicio1();
+        //boletim();
+        calculadora();
     }      
+    
+    public static void calculadora() {
+        /*
+        Crie um programa onde o usuário pode informar dois numeros e a operação
+        que deseja realizar.
+        O usuário pode realizar várias operações, antes de finalizar o programa.
+        */
+        //Java_Fundamentos_Aula3_Operações calcular = new Java_Fundamentos_Aula3_Operações();
+        float valor1 = 0;
+        float valor2 = 0;
+        while (true) {       
+            Java_Fundamentos_Aula3_Operações calcular = new Java_Fundamentos_Aula3_Operações();
+            System.out.println("********************");
+            System.out.println("** 1 - Soma       **");
+            System.out.println("** 2 - Subtrai    **");
+            System.out.println("** 3 - Multiplica **");
+            System.out.println("** 4 - Divide     **");
+            System.out.println("** 5 - Sair       **");
+            System.out.println("********************");
+            System.out.println("");
+            System.out.print("Escolha uma opção: ");
+            int opcao = leitor.nextInt();
+            if (opcao < 1 || opcao > 5){
+                System.out.println("Opção inválida!!");
+                continue;
+            }else{
+                System.out.print("Digite valor 1: ");
+                valor1 = leitor.nextInt();
+                System.out.print("Digite valor 2: ");
+                valor2 = leitor.nextInt();
+            }
+            if (opcao == 1){
+                System.out.println(calcular.getSoma(valor1, valor2));
+            }else if (opcao == 2){
+                System.out.println(calcular.getSubtrai(valor1, valor2));
+            }else if (opcao == 3){
+                System.out.println(calcular.getMultiplica(valor1, valor2));
+            }else if (opcao == 4){
+                System.out.println(calcular.getSubtrai(valor1, valor2));
+            }else if (opcao == 5){
+                System.out.println(calcular.getSubtrai(valor1, valor2));
+            }
+        } 
+    }
+    
+    public static void boletim() {
+        Java_Fundamentos_Aula3_Boletim Boletim = new Java_Fundamentos_Aula3_Boletim();
+        
+        Boletim.setfrequencia(100);
+        Boletim.setMedia(10);
+        Boletim.setNome("Carlos");
+        Boletim.setMatricula("ASA55");
+        
+        
+        System.out.println(Boletim.getMatricula());
+        System.out.println(Boletim.getNome());
+        System.out.println(Boletim.getMedia());
+        System.out.println(Boletim.getFrequencia());
+        
+    }
     
     public static void exercicio1() {
     /*
