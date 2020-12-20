@@ -15,6 +15,18 @@ public class Java_Fundamentos_Aula3_Operações {
     private float multiplica;
     private float divide;
     
+    public void getMenu(){
+        System.out.println("********************");
+        System.out.println("** 1 - Soma       **");
+        System.out.println("** 2 - Subtrai    **");
+        System.out.println("** 3 - Multiplica **");
+        System.out.println("** 4 - Divide     **");
+        System.out.println("** 5 - Sair       **");
+        System.out.println("********************");
+        System.out.println("");
+        System.out.print("Escolha uma opção: ");
+    }
+    
     public float getSoma(float pValor1, float pValor2){
         soma = pValor1 + pValor2;
         return this.soma;

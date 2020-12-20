@@ -24,26 +24,27 @@ public class Java_Fundamentos_Aula3 {
         calculadora();
     }      
     
+    public static void menuProfessor() {
+        System.out.println("A - adição");
+        System.out.println("S - subtração");
+        System.out.println("M - multiplicação");
+        System.out.println("D - divisão");
+        System.out.println("R - reset");
+    }
+    
     public static void calculadora() {
         /*
         Crie um programa onde o usuário pode informar dois numeros e a operação
         que deseja realizar.
         O usuário pode realizar várias operações, antes de finalizar o programa.
         */
-        //Java_Fundamentos_Aula3_Operações calcular = new Java_Fundamentos_Aula3_Operações();
+        /*    // Meu método ↓↓↓
         float valor1 = 0;
         float valor2 = 0;
         while (true) {       
             Java_Fundamentos_Aula3_Operações calcular = new Java_Fundamentos_Aula3_Operações();
-            System.out.println("********************");
-            System.out.println("** 1 - Soma       **");
-            System.out.println("** 2 - Subtrai    **");
-            System.out.println("** 3 - Multiplica **");
-            System.out.println("** 4 - Divide     **");
-            System.out.println("** 5 - Sair       **");
-            System.out.println("********************");
-            System.out.println("");
-            System.out.print("Escolha uma opção: ");
+            calcular.getMenu();
+            
             int opcao = leitor.nextInt();
             if (opcao < 1 || opcao > 5){
                 System.out.println("Opção inválida!!");
@@ -58,15 +59,68 @@ public class Java_Fundamentos_Aula3 {
                 valor2 = leitor.nextInt();
             }
             if (opcao == 1){
-                System.out.println("Soma: " + calcular.getSoma(valor1, valor2));
+                System.out.println("Soma: " + String.format("%.2f", calcular.getSoma(valor1, valor2)));
             }else if (opcao == 2){
-                System.out.println("Subtração: " + calcular.getSubtrai(valor1, valor2));
+                System.out.println("Subtração: " + String.format("%.2f", calcular.getSubtrai(valor1, valor2)));
             }else if (opcao == 3){
-                System.out.println("Multicação: " + calcular.getMultiplica(valor1, valor2));
+                System.out.println("Multicação: " + String.format("%.2f", calcular.getMultiplica(valor1, valor2)));
             }else if (opcao == 4){
-                System.out.println("Divisão: " + calcular.getDivide(valor1, valor2));
+                System.out.println("Divisão: " + String.format("%.2f", calcular.getDivide(valor1, valor2)));
             }
-        } 
+        }  // Meu método ↑↑↑
+        */
+        
+        // Método do Professor ↓↓↓
+        Java_Fundamentos_Aula3_Operações calc = new Java_Fundamentos_Aula3_Operações();
+        
+        menuProfessor();
+        
+        boolean entrar = true;
+        float resposta = 0;
+        int x = 0;
+        float n1 = 0;
+        String operacao = "";
+        
+        while (entrar) {
+            if(x==0){
+             System.out.print("Informe numero: ");
+             n1 = leitor.nextFloat();
+             System.out.print("Informe operação: ");
+             operacao = leitor.next();
+             x = 1;
+           }
+            System.out.print("Informe numero: ");
+            float n2 = leitor.nextFloat();
+            
+            switch(operacao.toUpperCase()){
+                case "A":
+                    resposta = calc.getSoma(n1, n2);
+                    System.out.println("Resultado " + resposta);
+                    break;
+                case "S":
+                    resposta = calc.getSubtrai(n1, n2);
+                    System.out.println("Resultado " + resposta);
+                    break;
+                case "D":
+                    resposta = calc.getDivide(n1, n2);
+                    System.out.println("Resultado " + resposta);
+                    break;
+                case "M":
+                    resposta = calc.getMultiplica(n1, n2);
+                    System.out.println("Resultado " + resposta);
+                    break;
+                default:System.out.println("Opção inválida");
+                    
+            }   
+            menuProfessor();
+            System.out.println("Para continuar digite a operação");
+            
+            operacao = leitor.next();
+            n1 = resposta;
+            entrar = !operacao.toLowerCase().equals("r");            
+        }
+        System.out.println("Resultado " + resposta);
+        // Método do Professor ↑↑↑   
     }
     
     public static void boletim() {
