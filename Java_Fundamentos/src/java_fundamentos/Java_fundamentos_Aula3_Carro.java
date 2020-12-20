@@ -18,6 +18,7 @@ public class Java_fundamentos_Aula3_Carro {
     int    nportas;
     int    capacidade;
     int    cv;
+    String cor;
     
     public void listar() {
         
@@ -29,6 +30,7 @@ public class Java_fundamentos_Aula3_Carro {
         System.out.println("Nº Portas..:" + this.nportas);
         System.out.println("Capacidade.:" + this.capacidade);
         System.out.println("Cavalos(HP):" + this.cv);
+        System.out.println("Cor........:" + this.cor);
         System.out.println("________________________________");
     }
 }
