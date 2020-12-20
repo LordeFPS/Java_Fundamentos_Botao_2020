@@ -18,4 +18,17 @@ public class Java_fundamentos_Aula3_Carro {
     int    nportas;
     int    capacidade;
     int    cv;
+    
+    public void listar() {
+        
+        System.out.println("________________________________");
+        System.out.println("Marca......:" + this.marca);
+        System.out.println("Modelo.....:" + this.modelo);
+        System.out.println("Placa......:" + this.placa);
+        System.out.println("Combustíbel:" + this.combutivel);
+        System.out.println("Nº Portas..:" + this.nportas);
+        System.out.println("Capacidade.:" + this.capacidade);
+        System.out.println("Cavalos(HP):" + this.cv);
+        System.out.println("________________________________");
+    }
 }
