@@ -16,12 +16,17 @@ public class Java_Fundamentos_Aula3 {
     }
     
     public static void exercicio1() {
+    /*
+        Solicitar ao usuário que digite os dados do produto.
+        O usuário poderá digitar vários produtos.
+        Então solicite que ele informe a quantidade, e crie um array
         
+    */
     }
     
-    public static void instanciando() {
+    public static void instanciandoCarros() {
        // instanciar um objeto
-       /*
+       
        Java_fundamentos_Aula3_Carro obj = new Java_fundamentos_Aula3_Carro();
        obj.marca  = "Ford";
        obj.modelo = "Ka";
@@ -31,9 +36,10 @@ public class Java_Fundamentos_Aula3 {
        obj.capacidade = 4;
        obj.cv = 78;
        obj.listar();
-        */
+    }
+    
+    public static void instanciandoProcutos() {
        // instanciando objeto
-       /*
        Java_fundamentos_Aula3_Produto produto1 = new Java_fundamentos_Aula3_Produto();
        produto1.descriocao = "Feijão";
        produto1.preco = 7.89f;
@@ -51,7 +57,7 @@ public class Java_Fundamentos_Aula3 {
        produto3.preco = 22.89f;
        produto3.quantidade = 30;
        produto3.listar();
-       */
+       
     }
     
     
