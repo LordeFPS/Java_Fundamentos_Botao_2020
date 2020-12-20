@@ -15,12 +15,20 @@ public class Java_fundamentos_Aula3_Produto {
     Float  preco;
     int    quantidade;
     
+    public void calculaItem() {
+     /*
+        Criar metodo para calcular valor de cada item/objeto e listar o resultado.
+    */
+        
+        System.out.println("Total.......:" + String.format("%.2f",this.preco * this.quantidade));
+    }
     public void listar() {
         
+        System.out.println("");
         System.out.println("Descrição...:" + this.descriocao);
         System.out.println("Peço........:" + this.preco);
         System.out.println("Quanditade..:" + this.quantidade);
-        System.out.println("");
+        
         
     }
 }
