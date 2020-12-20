@@ -10,11 +10,18 @@ package java_fundamentos.Aula3;
  * @author 69146
  */
 public class Java_Fundamentos_Aula3 {
-  
+    
     public static void main(String[] args) {
+        
+    }
+    
+    public static void exercicio1() {
+        
+    }
+    
+    public static void instanciando() {
        // instanciar um objeto
-       
-       
+       /*
        Java_fundamentos_Aula3_Carro obj = new Java_fundamentos_Aula3_Carro();
        obj.marca  = "Ford";
        obj.modelo = "Ka";
@@ -24,7 +31,30 @@ public class Java_Fundamentos_Aula3 {
        obj.capacidade = 4;
        obj.cv = 78;
        obj.listar();
+        */
+       // instanciando objeto
+       /*
+       Java_fundamentos_Aula3_Produto produto1 = new Java_fundamentos_Aula3_Produto();
+       produto1.descriocao = "Feijão";
+       produto1.preco = 7.89f;
+       produto1.quantidade = 10;
+       produto1.listar();
+       
+       Java_fundamentos_Aula3_Produto produto2 = new Java_fundamentos_Aula3_Produto();
+       produto2.descriocao = "Arroz";
+       produto2.preco = 12.89f;
+       produto2.quantidade = 20;
+       produto2.listar();
+       
+        Java_fundamentos_Aula3_Produto produto3 = new Java_fundamentos_Aula3_Produto();
+       produto3.descriocao = "Trigo";
+       produto3.preco = 22.89f;
+       produto3.quantidade = 30;
+       produto3.listar();
+       */
     }
+    
+    
     
 }
 
