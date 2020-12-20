@@ -23,6 +23,7 @@ public class Java_Fundamentos_Aula3 {
        obj.nportas    = 2;
        obj.capacidade = 4;
        obj.cv = 78;
+       obj.listar();
     }
     
 }
