@@ -19,14 +19,17 @@ public class Java_Fundamentos_Aula3_Operações {
         soma = pValor1 + pValor2;
         return this.soma;
     }
+    
     public float getSubtrai(float pValor1, float pValor2){
         subtrai = pValor1 - pValor2;
         return this.subtrai;
     }
+    
     public float getMultiplica(float pValor1, float pValor2){
         multiplica = pValor1 * pValor2;
         return this.multiplica;
     }
+    
     public float getDivide(float pValor1, float pValor2){
         if (pValor2 <= 0){
             System.out.println("Divisão por zero inválida!");

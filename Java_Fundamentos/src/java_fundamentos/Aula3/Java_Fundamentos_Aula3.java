@@ -48,6 +48,9 @@ public class Java_Fundamentos_Aula3 {
             if (opcao < 1 || opcao > 5){
                 System.out.println("Opção inválida!!");
                 continue;
+            }else if (opcao == 5){
+                System.out.println("Obrigado por usar nosso programa.");
+                break;
             }else{
                 System.out.print("Digite valor 1: ");
                 valor1 = leitor.nextInt();
@@ -55,15 +58,13 @@ public class Java_Fundamentos_Aula3 {
                 valor2 = leitor.nextInt();
             }
             if (opcao == 1){
-                System.out.println(calcular.getSoma(valor1, valor2));
+                System.out.println("Soma: " + calcular.getSoma(valor1, valor2));
             }else if (opcao == 2){
-                System.out.println(calcular.getSubtrai(valor1, valor2));
+                System.out.println("Subtração: " + calcular.getSubtrai(valor1, valor2));
             }else if (opcao == 3){
-                System.out.println(calcular.getMultiplica(valor1, valor2));
+                System.out.println("Multicação: " + calcular.getMultiplica(valor1, valor2));
             }else if (opcao == 4){
-                System.out.println(calcular.getSubtrai(valor1, valor2));
-            }else if (opcao == 5){
-                System.out.println(calcular.getSubtrai(valor1, valor2));
+                System.out.println("Divisão: " + calcular.getDivide(valor1, valor2));
             }
         } 
     }
