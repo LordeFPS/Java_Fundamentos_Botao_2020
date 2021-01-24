@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_fundamentos_Aula4;
+package Java_Fundamentos_Aula4;
+
+import java.time.LocalDate;
+import java.time.Month;
 
 /**
  *
@@ -14,17 +17,30 @@ public class Aula4 {
     public static void main(String[] args) {
         
         //Memorando();
-        IMC();
+        //IMC();
+        LocalDate dt = LocalDate.of(1999, Month.JANUARY, 26);
+        
+        Pessoa p = new Pessoa();
+        p.setNome("Gabriel");
+        p.setPeso(51);
+        p.setAltura(1.65);
+        p.setDataNasc(dt);
+        System.out.println(p.calculoIdade());
+        //p.leitor();
+        
+    }
+    public static void idade(){
         
     }
     
     public static void IMC() {
+        /*
         Pessoa p = new Pessoa();
         p.setNome("Gabriel");
         p.setPeso(51);
         p.setAltura(1.65);
         p.leitor();
-        
+        */
         
     }
     public static void Memorando() {
