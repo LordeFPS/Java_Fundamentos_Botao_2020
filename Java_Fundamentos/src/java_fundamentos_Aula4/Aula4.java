@@ -39,7 +39,7 @@ public class Aula4 {
         Pedido pedido = new Pedido("Carne", 10, 10, 10, 0);
         pedido.leitor();
         
-        Pedido pedido2 = new Pedido("Arroz", 10, 10, 10, 10);
+        Pedido pedido2 = new Pedido("Arroz", 10, 10, 0, 10);
         pedido2.leitor();
         
     }

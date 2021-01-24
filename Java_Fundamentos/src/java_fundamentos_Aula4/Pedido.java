@@ -81,7 +81,7 @@ public class Pedido {
         System.out.println("Produto: " + getProduto());
         System.out.println("Quantidade: " + getQtd());
         System.out.println("Preço Unit: " + getPreco());
-        System.out.println("Total(R$): " + getTotal());
+        System.out.println("Total(R$): " + String.format("%.2f",getTotal()));
         System.out.println("");
     }
 }
