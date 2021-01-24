@@ -137,7 +137,7 @@ public class Pessoa {
         System.out.println("Nome: " + getNome());
         System.out.println("Peso: " + getPeso());
         System.out.println("Altura: " + getAltura());
-        //System.out.println("Idade: " + calculoIdade());
+        System.out.println("Idade: " + calculoIdade());
         System.out.println("Status IMC: " + calculoIMC());
         
     }
