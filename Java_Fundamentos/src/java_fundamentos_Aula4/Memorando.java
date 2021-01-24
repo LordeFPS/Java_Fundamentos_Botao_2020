@@ -15,31 +15,28 @@ public class Memorando {
     private String signatario;
     
     //GET's and SET's
+    public String getAssunto(){//construtor sem parametro
+        return assunto;   
+    }
     public void setAssunto(String assunto) {
-        if (assunto.length() < 5){
-            System.out.println("Tamanho Inválido para assunto");
-        } else {
-            this.assunto = assunto;
-        }
+        this.assunto = assunto;
+    }
+    public String getDestinatario() {
+        return destinatario;
     }
     public void setDestinatario(String destinatario) {
-        if (destinatario.length() < 5){
-            System.out.println("Tamanho Inválido para destinatário");
-        } else {
-            this.destinatario = destinatario;
-        }
+        this.destinatario = destinatario;
     }
-    
+    public String getSignatario() {
+        return signatario;
+    }
     public void setSignatario(String signatario) {
-        if (signatario.length() < 5){
-            System.out.println("Tamanho Inválido para signatario");
-        } else {
-            this.signatario = signatario;
-        }
+        this.signatario = signatario;
     }
+
     
-    Memorando(){//construtor sem parametro
-        
+            
+    Memorando() {
     }
     Memorando(String assunto){ //Construtor com sobrecarga com parametro
         this.assunto = assunto;
