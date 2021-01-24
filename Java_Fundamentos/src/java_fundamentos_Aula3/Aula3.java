@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_fundamentos.Aula3;
+package java_fundamentos_Aula3;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author 69146
  */
-public class Java_Fundamentos_Aula3 {
+public class Aula3 {
     
     static Scanner leitor = new Scanner(System.in);
     
@@ -71,7 +71,7 @@ public class Java_Fundamentos_Aula3 {
         */
         
         // Método do Professor ↓↓↓
-        Java_Fundamentos_Aula3_Operações calc = new Java_Fundamentos_Aula3_Operações();
+        Aula3_Operações calc = new Aula3_Operações();
         
         menuProfessor();
         
@@ -124,7 +124,7 @@ public class Java_Fundamentos_Aula3 {
     }
     
     public static void boletim() {
-        Java_Fundamentos_Aula3_Boletim Boletim = new Java_Fundamentos_Aula3_Boletim();
+        Aula3_Boletim Boletim = new Aula3_Boletim();
         
         Boletim.setfrequencia(100);
         Boletim.setMedia(10);
@@ -151,12 +151,12 @@ public class Java_Fundamentos_Aula3 {
         System.out.print("Tamanho do array: ");
         int tamanho_array = leitor.nextInt();
         
-        Java_fundamentos_Aula3_Produto[] produtos = new Java_fundamentos_Aula3_Produto[tamanho_array];
+        Aula3_Produto[] produtos = new Aula3_Produto[tamanho_array];
         
        
         
         for (int i = 0; i < tamanho_array; i++){
-            Java_fundamentos_Aula3_Produto produto_inserido = new Java_fundamentos_Aula3_Produto();
+            Aula3_Produto produto_inserido = new Aula3_Produto();
             System.out.println("Descrição: ");
             produto_inserido.descriocao = leitor.next();
             System.out.println("Preço: ");
@@ -171,7 +171,7 @@ public class Java_Fundamentos_Aula3 {
         }
         System.out.println("");
         
-        for (Java_fundamentos_Aula3_Produto i : produtos){
+        for (Aula3_Produto i : produtos){
             i.listar(); 
              /*Criar metodo para calcular valor de cada item/objeto e listar o resultado.
                 ↓↓↓*/
@@ -182,7 +182,7 @@ public class Java_Fundamentos_Aula3 {
     public static void instanciandoCarros() {
        // instanciar um objeto
        
-       Java_fundamentos_Aula3_Carro obj = new Java_fundamentos_Aula3_Carro();
+       Aula3_Carro obj = new Aula3_Carro();
        obj.marca  = "Ford";
        obj.modelo = "Ka";
        obj.placa  = "abc-1234";
@@ -195,19 +195,19 @@ public class Java_Fundamentos_Aula3 {
     
     public static void instanciandoProcutos() {
        // instanciando objeto
-       Java_fundamentos_Aula3_Produto produto1 = new Java_fundamentos_Aula3_Produto();
+       Aula3_Produto produto1 = new Aula3_Produto();
        produto1.descriocao = "Feijão";
        produto1.preco = 7.89f;
        produto1.quantidade = 10;
        produto1.listar();
        
-       Java_fundamentos_Aula3_Produto produto2 = new Java_fundamentos_Aula3_Produto();
+       Aula3_Produto produto2 = new Aula3_Produto();
        produto2.descriocao = "Arroz";
        produto2.preco = 12.89f;
        produto2.quantidade = 20;
        produto2.listar();
        
-        Java_fundamentos_Aula3_Produto produto3 = new Java_fundamentos_Aula3_Produto();
+        Aula3_Produto produto3 = new Aula3_Produto();
        produto3.descriocao = "Trigo";
        produto3.preco = 22.89f;
        produto3.quantidade = 30;

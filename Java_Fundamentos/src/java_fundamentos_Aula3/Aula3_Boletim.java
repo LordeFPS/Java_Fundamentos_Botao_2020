@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_fundamentos.Aula3;
+package java_fundamentos_Aula3;
 
 /**
  *
  * @author 69146
  */
-public class Java_Fundamentos_Aula3_Boletim {
+public class Aula3_Boletim {
     
     private String matricula;
     private String nome;

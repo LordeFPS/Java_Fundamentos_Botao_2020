@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_fundamentos;
+package Java_Fundamentos_Aula2;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  *
  * @author 69146
  */
-public class Java_Fundamentos_Aula2 {
+public class Aula2 {
 
     /**
      * @param args the command line arguments

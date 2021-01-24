@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_fundamentos;
+package Java_Fundamentos_Aula1;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author gsuporte
  */
-public class Java_Fundamentos_Aula1 {
+public class Aula1 {
 
     /**
      * @param args the command line arguments

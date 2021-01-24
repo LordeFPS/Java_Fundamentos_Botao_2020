@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_fundamentos.Aula3;
+package java_fundamentos_Aula3;
 
 /**
  *
  * @author 69146
  */
-public class Java_fundamentos_Aula3_Produto {
+public class Aula3_Produto {
     
     String descriocao;
     Float  preco;
