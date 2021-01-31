@@ -22,5 +22,15 @@ public class Motocicleta extends Veiculo{
         this.cilindrada = cilindrada;
     }
     
+    @Override
+    public void ronco(){
+        System.out.println("Ronco da moto");
+    }
+    
+    @Override
+    public void listar(){
+        super.listar();
+        System.out.println("Cilindrada..: " + this.cilindrada);
+    }
     
 }
