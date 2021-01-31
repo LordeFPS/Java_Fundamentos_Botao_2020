@@ -5,13 +5,16 @@
  */
 package Java_Fundamnetos_Aula5;
 
-import Java_Fundamnetos_Aula5.Entidade.Venda;
+
 import Java_Fundamnetos_Aula5.Heranca.Carro;
 import Java_Fundamnetos_Aula5.Heranca.Cereal;
+import Java_Fundamnetos_Aula5.Heranca.EstudanteFundamental;
+import Java_Fundamnetos_Aula5.Heranca.EstudanteGraduacao;
+import Java_Fundamnetos_Aula5.Heranca.EstudanteMedio;
 import Java_Fundamnetos_Aula5.Heranca.Motocicleta;
+import Java_Fundamnetos_Aula5.Heranca.Pessoa;
 import Java_Fundamnetos_Aula5.Heranca.Produto;
 import Java_Fundamnetos_Aula5.Heranca.ProtectedEstudante;
-import Java_Fundamnetos_Aula5.Heranca.ProtectedPessoa;
 import Java_Fundamnetos_Aula5.Heranca.Veiculo;
 
 /**
@@ -27,9 +30,38 @@ public class Aula5 {
         //Herenca();
         //Produto();
         //ExemploProtected();
+        Exercicio();
+        
     }
     
-    
+    public static void Exercicio() {
+        //Criar 3 classes derivadasde ProtectedEstudante
+        EstudanteFundamental construtor = new EstudanteFundamental(
+                "Jorge","Come de tudo",true,
+                123,"Jose","12345678901");
+        construtor.listar();
+        
+        EstudanteMedio medio = new EstudanteMedio("2º", "15", 
+                "Sagrada Família", 123, "Josifaldo", 
+                "12345678901");
+        medio.listar();
+        
+        EstudanteGraduacao faculdade = new EstudanteGraduacao("5º", 
+                "21", "SENAI", 123, "Gabriel", 
+                "08425648925");
+        faculdade.listar();
+        
+        /*
+        EstudanteFundamental fundamental = new EstudanteFundamental();
+        fundamental.setNome("Jose");
+        fundamental.setCpf("12345678901");
+        fundamental.setMatricula(123);
+        fundamental.setNomeResponsavel("Jorge");
+        fundamental.setObservacao("Come de tudo");
+        fundamental.setCuidadoEspecial(false);
+        fundamental.listar();
+        */
+    }
     
    public static void ExemploProtected(){
        ProtectedEstudante estudante = new ProtectedEstudante();
