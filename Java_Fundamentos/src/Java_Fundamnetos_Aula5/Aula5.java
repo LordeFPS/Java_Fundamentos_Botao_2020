@@ -23,13 +23,15 @@ public class Aula5 {
     public static void main(String[] args) {
         
         //Classes();
-        //ExFinal();
+        //ExemploFinal();
         //Herenca();
         //Produto();
-        ExProtected();
+        //ExemploProtected();
     }
     
-   public static void ExProtected(){
+    
+    
+   public static void ExemploProtected(){
        ProtectedEstudante estudante = new ProtectedEstudante();
        estudante.setNome("Gabriel");
        estudante.setMatricula(1234);
@@ -80,7 +82,7 @@ public class Aula5 {
         
     }
     
-    public static void ExFinal() {
+    public static void ExemploFinal() {
         ExemploFinal exfinal = new ExemploFinal();
         System.out.println("Valor de x " + exfinal.x);
         //exfinal.x = 50;
