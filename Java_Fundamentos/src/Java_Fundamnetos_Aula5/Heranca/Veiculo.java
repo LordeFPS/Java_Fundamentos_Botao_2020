@@ -38,6 +38,15 @@ public class Veiculo {
         this.modelo = modelo;
     }
     
+    public void ronco(){
+        System.out.println("Ronco do veículo");
+    }
+    public void listar(){
+        System.out.println("");
+        System.out.println("Placa.......: " + this.placa);
+        System.out.println("Marca.......: " + this.marca);
+        System.out.println("Modelo......: " + this.modelo);
+    }
     
     
 }

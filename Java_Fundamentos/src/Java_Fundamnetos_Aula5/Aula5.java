@@ -6,7 +6,12 @@
 package Java_Fundamnetos_Aula5;
 
 import Java_Fundamnetos_Aula5.Entidade.Venda;
+import Java_Fundamnetos_Aula5.Heranca.Carro;
+import Java_Fundamnetos_Aula5.Heranca.Cereal;
 import Java_Fundamnetos_Aula5.Heranca.Motocicleta;
+import Java_Fundamnetos_Aula5.Heranca.Produto;
+import Java_Fundamnetos_Aula5.Heranca.ProtectedEstudante;
+import Java_Fundamnetos_Aula5.Heranca.ProtectedPessoa;
 import Java_Fundamnetos_Aula5.Heranca.Veiculo;
 
 /**
@@ -19,7 +24,31 @@ public class Aula5 {
         
         //Classes();
         //ExFinal();
-        Herenca();
+        //Herenca();
+        //Produto();
+        ExProtected();
+    }
+    
+   public static void ExProtected(){
+       ProtectedEstudante estudante = new ProtectedEstudante();
+       estudante.setNome("Gabriel");
+       estudante.setMatricula(1234);
+       estudante.setCpf("12345678901");
+       estudante.listar();
+   }
+    
+    public static void Produto() {
+        Produto produto = new Produto();
+        produto.setDescricao("Fruta");
+        produto.setPreco(1);
+        produto.setCategoria("Banana");
+        
+                
+        Cereal cereal = new Cereal();
+        cereal.setDescricao("Cereal de banana");
+        cereal.setPreco(5);
+        cereal.setCategoria("Industrializado");
+        cereal.setTipoEmbalagem("Monama Granola");
         
     }
     
@@ -29,11 +58,25 @@ public class Aula5 {
         veiculo.setMarca("Ford");
         veiculo.setModelo("Ford Ka");
         
+        veiculo.listar();
+        veiculo.ronco();
+        
         Motocicleta motocileta = new Motocicleta();
         motocileta.setCilindrada(300);
         motocileta.setPlaca("cba-4321");
         motocileta.setMarca("Yamaha");
         motocileta.setModelo("Yzf R3");
+        motocileta.listar();
+        motocileta.ronco();
+        
+        Carro carro = new Carro();
+        carro.setPotencia(421);
+        carro.setNumeroPortas(4);
+        carro.setPlaca("asd-5433");
+        carro.setMarca("Mercedes-AMG");
+        carro.setModelo("A45 S");
+        carro.listar();
+        carro.ronco();
         
     }
     
