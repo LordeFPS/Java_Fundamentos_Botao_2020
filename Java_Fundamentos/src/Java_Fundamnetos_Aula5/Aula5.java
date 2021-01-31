@@ -6,6 +6,8 @@
 package Java_Fundamnetos_Aula5;
 
 import Java_Fundamnetos_Aula5.Entidade.Venda;
+import Java_Fundamnetos_Aula5.Heranca.Motocicleta;
+import Java_Fundamnetos_Aula5.Heranca.Veiculo;
 
 /**
  *
@@ -15,12 +17,25 @@ public class Aula5 {
     
     public static void main(String[] args) {
         
-        Classes();
+        //Classes();
         //ExFinal();
+        Herenca();
         
     }
     
-    
+    public static void Herenca() {
+        Veiculo veiculo = new Veiculo();
+        veiculo.setPlaca("abc-1234");
+        veiculo.setMarca("Ford");
+        veiculo.setModelo("Ford Ka");
+        
+        Motocicleta motocileta = new Motocicleta();
+        motocileta.setCilindrada(300);
+        motocileta.setPlaca("cba-4321");
+        motocileta.setMarca("Yamaha");
+        motocileta.setModelo("Yzf R3");
+        
+    }
     
     public static void ExFinal() {
         ExemploFinal exfinal = new ExemploFinal();
@@ -38,9 +53,6 @@ public class Aula5 {
         System.out.println("Cpf: " + p.getCpf());
         //p.Ola("Olá através do Obejeto");
         //Pessoa.Ola("Olá através da Classe");
-        
-        
-
     }
     
 }
