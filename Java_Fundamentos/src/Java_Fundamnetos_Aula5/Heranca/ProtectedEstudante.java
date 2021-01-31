@@ -11,14 +11,27 @@ package Java_Fundamnetos_Aula5.Heranca;
  */
 public class ProtectedEstudante extends ProtectedPessoa{
     int matricula;
+
+    public ProtectedEstudante() {
+    }
+
+    public ProtectedEstudante(int matricula, String nome, String cpf) {
+        super(nome, cpf);
+        this.matricula = matricula;
+    }
+
     
-    public void setMatricula(int matricula){
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
     
+    @Override
     public void listar(){
-        System.out.println("Nome......: " + this.nome);
-        System.out.println("CPF.......: " + this.cpf);
-        System.out.println("Matrícula.: " + this.matricula);
+        super.listar();
+        System.out.println("Matrícula..: " + this.matricula);
     }
 }

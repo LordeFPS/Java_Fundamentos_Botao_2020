@@ -141,5 +141,5 @@ public class Pessoa {
         System.out.println("Status IMC: " + calculoIMC());
         
     }
-    
+
 }

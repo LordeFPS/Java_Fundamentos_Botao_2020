@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Java_Fundamnetos_Aula5;
+package Java_Fundamnetos_Aula5.Heranca;
 
 import Java_Fundamnetos_Aula5.Utils.ValidaCPF;
 
@@ -11,7 +11,7 @@ import Java_Fundamnetos_Aula5.Utils.ValidaCPF;
  *
  * @author 69146
  */
-class Pessoa {
+public class Pessoa {
     private String nome;
     private String cpf;
     
