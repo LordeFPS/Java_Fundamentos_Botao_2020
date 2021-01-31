@@ -15,10 +15,12 @@ public class Aula5 {
     
     public static void main(String[] args) {
         
-        //Classes();
-        ExFinal();
+        Classes();
+        //ExFinal();
         
     }
+    
+    
     
     public static void ExFinal() {
         ExemploFinal exfinal = new ExemploFinal();
@@ -30,10 +32,14 @@ public class Aula5 {
     
     public static void Classes() {
         Pessoa p = new Pessoa();
-        p.nome = "GABRIEL";
-        p.setCpf("1234");
+        p.setNome("GABRIEL");
+        p.setCpf("12345678901");
+        System.out.println("Nome: " + p.getNome());
+        System.out.println("Cpf: " + p.getCpf());
+        //p.Ola("Olá através do Obejeto");
+        //Pessoa.Ola("Olá através da Classe");
         
-        Venda v = new Venda();
+        
 
     }
     
