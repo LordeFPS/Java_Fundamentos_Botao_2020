@@ -15,27 +15,36 @@ public class Pessoa implements Icrud{
 
     @Override
     public boolean create() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
+        return true;
     }
 
     @Override
     public Object retrieve(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
+        return null;
     }
 
     @Override
     public List<Object> retrieve() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
+        return null;
     }
 
     @Override
     public boolean update(Object p) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
+        return true;
     }
 
     @Override
     public void delete(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
     }
     
 }

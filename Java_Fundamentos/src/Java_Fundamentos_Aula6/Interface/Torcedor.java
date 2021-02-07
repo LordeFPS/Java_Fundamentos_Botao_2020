@@ -13,22 +13,28 @@ public class Torcedor implements IRotina, ITrabalho{
 
     @Override
     public void correr() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
     }
 
     @Override
     public String cumprimentar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
+        return null;
     }
 
     @Override
     public void limpar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
     }
 
     @Override
     public String reclamar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Aqui é onde colocamos as regras ne negócio ou o código que foi pedido
+        //pela equipe de acordo com a documentação
+        return null;
     }
     
 }
