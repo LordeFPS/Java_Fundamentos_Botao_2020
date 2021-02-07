@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Java_Fundamnetos_Aula5.Heranca;
+package Java_Fundamentos_Aula5.Heranca;
 
-import Java_Fundamnetos_Aula5.Utils.ValidaCPF;
+import Java_Fundamentos_Aula5.Utils.ValidaCPF;
 
 /**
  *

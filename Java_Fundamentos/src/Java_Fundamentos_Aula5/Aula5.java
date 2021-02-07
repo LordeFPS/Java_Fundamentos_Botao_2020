@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Java_Fundamnetos_Aula5;
+package Java_Fundamentos_Aula5;
 
 
-import Java_Fundamnetos_Aula5.Heranca.Carro;
-import Java_Fundamnetos_Aula5.Heranca.Cereal;
-import Java_Fundamnetos_Aula5.Heranca.EstudanteFundamental;
-import Java_Fundamnetos_Aula5.Heranca.EstudanteGraduacao;
-import Java_Fundamnetos_Aula5.Heranca.EstudanteMedio;
-import Java_Fundamnetos_Aula5.Heranca.Motocicleta;
-import Java_Fundamnetos_Aula5.Heranca.Pessoa;
-import Java_Fundamnetos_Aula5.Heranca.Produto;
-import Java_Fundamnetos_Aula5.Heranca.ProtectedEstudante;
-import Java_Fundamnetos_Aula5.Heranca.Veiculo;
+import Java_Fundamentos_Aula5.Heranca.Carro;
+import Java_Fundamentos_Aula5.Heranca.Cereal;
+import Java_Fundamentos_Aula5.Heranca.EstudanteFundamental;
+import Java_Fundamentos_Aula5.Heranca.EstudanteGraduacao;
+import Java_Fundamentos_Aula5.Heranca.EstudanteMedio;
+import Java_Fundamentos_Aula5.Heranca.Motocicleta;
+import Java_Fundamentos_Aula5.Heranca.Pessoa;
+import Java_Fundamentos_Aula5.Heranca.Produto;
+import Java_Fundamentos_Aula5.Heranca.ProtectedEstudante;
+import Java_Fundamentos_Aula5.Heranca.Veiculo;
 
 /**
  *
