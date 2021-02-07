@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Java_Fundamentos_Aula6.Java_Fundamentos_Aula6_Composicao;
+package Java_Fundamentos_Aula6.Composicao;
 
 /**
  *
@@ -15,6 +15,16 @@ public class Pessoa {
     private String email;
     private String fone;
 
+    public Pessoa() {
+    }
+
+    public Pessoa(int id, String nome, String email, String fone) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.fone = fone;
+    }
+    
     public int getId() {
         return id;
     }

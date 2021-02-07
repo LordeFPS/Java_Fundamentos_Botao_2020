@@ -3,23 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Java_Fundamentos_Aula6.Java_Fundamentos_Aula6_Composicao;
+package Java_Fundamentos_Aula6.Composicao;
 
 /**
  *
  * @author 69146
  */
 public class Aluno {
-    private String matricula;
+    private int matricula;
     private float media;
     private float frequencia;
     private Pessoa pessoa;
 
-    public String getMatricula() {
+    public Aluno() {
+    }
+
+    public Aluno(int matricula, float media, float frequencia, Pessoa pessoa) {
+        this.matricula = matricula;
+        this.media = media;
+        this.frequencia = frequencia;
+        this.pessoa = pessoa;
+    }
+    
+    public int getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
 
