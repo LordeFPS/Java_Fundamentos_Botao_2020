@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Java_Fundamentos_Aula6.Java_Fundamentos_Aula6_Agregation;
+package Java_Fundamentos_Aula6.Agregation;
 
 /**
  *

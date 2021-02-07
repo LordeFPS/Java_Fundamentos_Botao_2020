@@ -34,7 +34,13 @@ public abstract class Pessoa {
     
     public abstract List<Pessoa> retrieve();
     
-    public abstract boolean update(Pessoa p);
+    public boolean update(Pessoa p){
+        return true;
+    }
+    
+    public void delete(int id){
+        
+    }
     
     public int getId() {
         return id;
